@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class FA_Message {
+  
+  init(dict: Dictionary<String,Any>) {
+    self.content_loaded = dict["content_loaded"] as! Bool
+    self.blurb = dict["blurb"] as! String
+    self.body = dict["body"] as! String
+  }
+  
+  var content_loaded: Bool!
+  var blurb: String!
+  var body: String!
+}

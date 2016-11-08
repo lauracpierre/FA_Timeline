@@ -25,7 +25,7 @@ We already pre-loaded the list of messages for you from a json flatfile, so you 
 The class `FA_Message` already possess all the properties you will need for this exercise. 
 
 The following properties are available to you: 
-* content_loaded: Boolean = Whether or not the message is fully loaded or not. When this value is false and the customer wish to see this message, we have to load the message from the server. When the content is not loaded the app will only display the message blurb on a single line. When the blurb is clicked, we can load and display the message.  For the sake of the exercise, the content in `body` and `light_body` will already be loaded so that you do not have to perform any network call.
+* content_loaded: Boolean = Whether or not the message is fully loaded or not. When this value is false and the customer wish to see this message, we have to load the message from the server. When the content is not loaded the app will only display the message blurb on a single line. When the blurb is clicked, we can load and display the message.  For the sake of the exercise, the content of `body` will already be loaded so that you do not have to perform any network call.
 * body: String = This is the full message, including the quote of previous messages. (we are not interested in the quotes, so we removed them for the exercise).
 * blurb: String = The message blurb to isplay when the message is collapsed (when `content_loaded` is false).
 

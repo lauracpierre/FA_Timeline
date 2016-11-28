@@ -26,7 +26,7 @@ The following properties are available to you:
 We are looking to create a simple timeline of messages. 
 
 The class `FA_TableViewController` is already implementing a few key delegate methods. 
-* Please display the HTML content of the message (the `body` property of the message). 
+* Display the HTML content of the message (the `body` property of the message). 
 * The webview should resize itself to the correct height, and so does the cell.
 
 

@@ -29,7 +29,9 @@ class FA_TableViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: messageCellIdentifier, for: indexPath)
-    cell.textLabel?.text = "Message \(indexPath.row)"
+    let message = self.messages[indexPath.row]
+    
+    cell.textLabel?.text = message.blurb
     return cell
   }
   

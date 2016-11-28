@@ -29,14 +29,9 @@ The class `FA_TableViewController` is already implementing a few key delegate me
 * Display the HTML content of the message (the `body` property of the message). 
 * The webview should resize itself to the correct height, and so does the cell.
 
-
-##### (Optional) Do you want to go further?
-This was too simple?
-
-The `FA_Message` class provides other properties (such as `content_loaded`, and `blurb`). With these extra properties, we can change the behavior of the cell a bit: 
+The cell can either display a blurb of the message, or the body itself. 
 * If the content_loaded property of a message is true: display the body of a message first
 * if the content_loaded property of a message is false: display the blurb. A tap on the blurb should hide it and display the `body` instead. Once a message is expanded, you cannot close it. (By default, some messages are `content_loaded = false` but the body is already set. This is to simplify the test).
-
 
 
 ### What you shouldn't spend too much time on

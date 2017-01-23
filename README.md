@@ -28,8 +28,9 @@ We are looking to create a simple timeline of messages.
 The class `FA_TableViewController` is already implementing a few key delegate methods. 
 * Display the HTML content of the message (the `body` property of the message). 
 * The webview should resize itself to the correct height, and so does the cell.
-* Only one cell should be used. Please do not use two cells to either display the blurb or the webview.
+* Only one type of cell should be used. Please do not use two cells to either display the blurb or the webview.
 * Use of autolayout is preferred. 
+* The newest message is at the bottom of the list of the 4 messages, and you should scroll to this message. For the scrolling position, the top of the newest message should be at the top of the screen (so that the three previous messages are above it) 
 
 The cell can either display a blurb of the message, or the body itself. 
 * If the content_loaded property of a message is true: display the body of a message first

@@ -42,7 +42,7 @@ class FA_TableViewController: UITableViewController {
       let jsonData = try NSData(contentsOfFile: pathToComposer!) as Data
       let json = try JSONSerialization.jsonObject(with: jsonData, options: []) as! Dictionary<String, Any>
       let rawMessages = json["messages"] as! Array<Dictionary<String, Any>>
-      rawMessages.forEach({ (message) in
+      rawMessages.reversed().forEach({ (message) in
         self.messages.append(FA_Message(dict: message))
       })
     } catch {}

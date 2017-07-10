@@ -14,9 +14,11 @@ class FA_Message {
     self.content_loaded = dict["content_loaded"] as! Bool
     self.blurb = dict["blurb"] as! String
     self.body = dict["body"] as! String
+    self.from = dict["from"] as! String
   }
   
   var content_loaded: Bool!
   var blurb: String!
   var body: String!
+  var from: String!
 }

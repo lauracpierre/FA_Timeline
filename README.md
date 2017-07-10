@@ -3,6 +3,8 @@
 You are given a small sample of our API response when loading an email conversation.
 The goal of this test is to display a list of emails in the `FA_TableViewController`. 
 
+**Please do not submit your solution via a PR to this repository or somewlhere else online. You can email a zip file containing the project.**
+
 ### Issues we are facing
 
 One of the biggest challenge we are facing is to display multiple HTML emails in a scrollview. 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AA80EE11F4AAA5200577130 /* FA_Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA80EE01F4AAA5200577130 /* FA_Conversation.swift */; };
 		7AD74C591DD0F22900946C51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD74C581DD0F22900946C51 /* AppDelegate.swift */; };
 		7AD74C5E1DD0F22900946C51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD74C5C1DD0F22900946C51 /* Main.storyboard */; };
 		7AD74C601DD0F22900946C51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD74C5F1DD0F22900946C51 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7AA80EE01F4AAA5200577130 /* FA_Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FA_Conversation.swift; sourceTree = "<group>"; };
 		7AD74C551DD0F22900946C51 /* iOSEngineeringTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSEngineeringTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD74C581DD0F22900946C51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AD74C5D1DD0F22900946C51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				7AD74C6A1DD0F28000946C51 /* FA_TableViewController.swift */,
 				7AD74C6C1DD0F46F00946C51 /* FA_Message.swift */,
 				7AD74C711DD0FD8B00946C51 /* conversation.json */,
+				7AA80EE01F4AAA5200577130 /* FA_Conversation.swift */,
 			);
 			path = iOSEngineeringTest;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				7AD74C6B1DD0F28000946C51 /* FA_TableViewController.swift in Sources */,
 				7AD74C6D1DD0F46F00946C51 /* FA_Message.swift in Sources */,
 				7AD74C701DD0F4F500946C51 /* README.md in Sources */,
+				7AA80EE11F4AAA5200577130 /* FA_Conversation.swift in Sources */,
 				7AD74C591DD0F22900946C51 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +315,7 @@
 				7AD74C691DD0F22900946C51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

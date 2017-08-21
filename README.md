@@ -15,10 +15,16 @@ One of the biggest challenge we are facing is to display multiple HTML emails in
 
 ### What is available to you
 
-We already pre-loaded the list of messages for you from a json file, so you do not need to handle any of the networking aspect. Loading this file is done synchronously in the viewDidload method of the controller. 
-The class `FA_Message` already possess all the properties you will need for this exercise. 
+We already pre-loaded the list of conversations for you from a json file, so you do not need to handle any of the networking aspect. Loading this file is done synchronously in the viewDidload method of the controller. 
+The classes `FA_Conversation` && `FA_Message` already possess all the properties you will need for this exercise. 
 
-The following properties are available to you: 
+The following properties in `FA_Conversation` are available to you:
+* from: String = The main sender
+* read: Bool = Whether or not the conversation was read
+* blurb: The blurb of the last message
+* messages: The array of `FA_Message`
+
+The following properties in `FA_Message` are available to you: 
 * from: String = The sender's email address
 * body: String = This is the full HTML message.
 * content_loaded: Boolean = Whether or not the message is fully loaded. For the sake of the exercise, the content of `body` will already be loaded so that you do not have to perform any network call. The content_loaded can be then ignored. 
@@ -28,7 +34,11 @@ The following properties are available to you:
 
 We are looking to create a simple timeline of messages. 
 
+
 The class `FA_TableViewController` is already implementing a few key delegate methods. 
+You should display the status of the conversation (read or not), the blurb and from. After click on the cell, this should take you to another view to display the list of messages (henced, you just read the conversation).
+
+In the message list:
 
 * Display the HTML content of the message (the `body` property of the message). 
 * The webview should resize itself to the correct height, and so does the cell.
@@ -40,8 +50,8 @@ The cell should always display two piece of information:
 
 * At the top: the sender from
 * Below the from: the cell can either display a blurb of the message, or the body itself. 
-  * If the content_loaded property of a message is true: display the body of a message first
-  * if the content_loaded property of a message is false: display the blurb. A tap on the blurb should hide it and display the `body` instead. Once a message is expanded, you cannot close it. (By default, some messages are `content_loaded = false` but the body is already set. This is to simplify the test).
+* If the content_loaded property of a message is true: display the body of a message first
+* if the content_loaded property of a message is false: display the blurb. A tap on the blurb should hide it and display the `body` instead. Once a message is expanded, you cannot close it. (By default, some messages are `content_loaded = false` but the body is already set. This is to simplify the test).
 
 
 ### What you shouldn't spend too much time on

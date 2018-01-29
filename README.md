@@ -3,7 +3,7 @@
 You are given a small sample of our API response when loading an email conversation.
 The goal of this test is to display a list of emails in the `FA_TableViewController`. 
 
-**Please do not submit your solution via a PR to this repository or somewlhere else online. You can email a zip file containing the project.**
+**When you are finished, please submit your result by sharing a link to a Dropbox, Google Drive, or WeTransfer folder. Please do not submit a PR to this repository.**
 
 ### Issues we are facing
 
